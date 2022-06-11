@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble game</title>
+</head>
+<style>
+    canvas{
+        box-sizing: border-box;
+    }
+    * {
+        margin: 0;
+    }
+
+    canvas {
+        position: relative;
+    }
+
+    .scoreDisplay {
+        padding: 8px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        user-select: none;
+    }
+
+    #startBox {
+        background: #fff;
+        color: #000;
+        text-align: center;
+        box-sizing: border-box;
+        border-radius: 12px;
+        padding-top: 18px;
+        position: absolute;
+        font-size: 18px;
+        width: 300px;
+        height: 150px;
+        left: 50%;
+        top: 40%;
+        transform: translateX(-50%);
+
+    }
+
+    button {
+        margin-top: 12px;
+        font-size: 24px;
+        border: thin solid blue;
+        background-color: blue;
+        color: #fff;
+        border-radius: 24px;
+        width: 85%;
+        height: 48px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <canvas></canvas>
+    <div class="scoreDisplay"><span>Score: </span><span id="score">0</span></div>
+    <div id="startBox">
+        <h2 id="totalScore">0</h2>
+        <p>Points</p>
+        <button onclick="startFunction()">Start game</button>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="main.js"></script>
+
+</html>
